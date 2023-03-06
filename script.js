@@ -10,11 +10,13 @@
 //}
 
 const modal = document.querySelector('#modal');
-const headModalButton = document.querySelector('#callback-modal');
+const headModalButton = document.querySelectorAll('#callback-modal,#callback-modal-mob');
 const formModal = document.querySelector('.form-modal');
 
-headModalButton.addEventListener('click', (e) => {
-    modal.classList.replace('modal','modal-active');
+headModalButton.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        modal.classList.replace('modal','modal-active');
+    })
 })
 
 modal.addEventListener('click', (e) => {
