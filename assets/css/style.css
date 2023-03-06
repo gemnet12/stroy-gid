@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.hero-section {
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+}
+
+/*Tablets*/
+@media only screen and (max-width: 600px) {
+    .container {
+        
+    }
+}
+
+/*Desctop*/
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        max-width: 1134px;
+        min-width: 600px;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-upbar {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-desc {
+        width: 140px;
+        text-align: center;
+    }
+
+    .nav-phone span {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-downbar {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style-type: none;
+        flex-flow: row nowrap;
+    }
+
+    .nav-downbar li {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 100vh;
+    }
+}
