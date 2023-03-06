@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Строй гид</title>
 </head>
 <body>
     <header class="container">
@@ -16,24 +16,37 @@
                 <span class="nav-desc upbar-item">Строительные работы <br>
                     Минская область
                 </span>
-                <a class="upbar-item" href="https://www.instagram.com/_stroy_gid_/?igshid=ZDdkNTZiNTM%3D">
-                    <img src="assets/images/instagram-mono.svg" alt="instagram">
+                <a class="upbar-item" target="_blank" href="https://www.instagram.com/_stroy_gid_/?igshid=ZDdkNTZiNTM%3D">
+                    <img class="inst-logo" src="assets/images/instagram-mono.svg" alt="instagram">
                 </a>
-                <div class="nav-phone upbar-item">
-                    <span class="nav-phone-number">+375 29 704-02-05</span>
-                    <span class="nav-phone-name">Андрей</span>
-                </div>
-                <div class="nav-phone upbar-item">
-                    <span class="nav-phone-number">+375 29 704-02-05</span>
-                    <span class="nav-phone-name">Андрей</span>
-                </div>
-                <button class="btn btn-dark-transp">Перезвоните мне</button>
+                <a class="tel-link" href="tel:+375297040205">
+                    <div class="nav-phone upbar-item">
+                        <span class="nav-phone-number">+375 29 704-02-05</span>
+                        <span class="nav-phone-name">Андрей</span>
+                    </div>
+                </a>
+                <a class="tel-link" href="tel:+375297040205">
+                    <div class="nav-phone upbar-item">
+                        <span class="nav-phone-number">+375 29 704-02-05</span>
+                        <span class="nav-phone-name">Андрей</span>
+                    </div>
+                </a>
+                <button id="callback-modal" class="btn-mob btn-yell">Перезвоните мне</button>
+                <button id="callback-modal" class="btn btn-dark-transp">Перезвоните мне</button>
             </div>
             <ul class="nav-downbar">
-                <li>Типы работ</li>
-                <li>наши работы</li>
-                <li>о нас</li>
-                <li>контакты</li>
+                <li>
+                    <a>Типы работ</a>
+                </li>
+                <li>
+                    <a>наши работы</a>
+                </li>
+                <li>
+                    <a>о нас</a>
+                </li>
+                <li>
+                    <a>контакты</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -55,6 +68,25 @@
         <img class="house-roof" src="assets/images/roof-1.png" alt="roof">
     </div>
     -->
-    <script defer src="assets/js/script.js"></script>
+    <div id="modal" class="modal">
+        <div class="form-modal">
+            <p>Мы вам обязательно перезвоним</p>
+            <form action="">
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
 </body>
 </html>
