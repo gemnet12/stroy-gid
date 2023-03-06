@@ -19,9 +19,9 @@ body {
 }
 
 .btn-mob {
-    font-size: 28px;
-    width: 400px;
-    padding: 30px 0;
+    font-size: 24px;
+    width: 300px;
+    padding: 25px 0;
     border-radius: 9px;
 }
 
@@ -102,12 +102,12 @@ nav {
 }
 
 .nav-phone-number {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
 }
 
 .nav-phone-name {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
