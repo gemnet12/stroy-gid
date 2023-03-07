@@ -68,18 +68,18 @@ a {
     width: 100%;
 }
 
-nav {
-    height: 100vh;
-}
 
 .nav-upbar {
-    height: 100%;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
     
+}
+
+.upbar-item {
+    margin: 2vh 0;
 }
 
 .nav-desc {
@@ -116,6 +116,7 @@ nav {
 }
 
 header {
+    height: 100vh;
     color: var(--def-dark);
     background-image: url('assets/images/hero-background.jpg');
     background-size: cover;
