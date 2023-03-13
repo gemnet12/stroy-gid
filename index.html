@@ -5,88 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Строй гид</title>
+    <title>GID</title>
 </head>
 <body>
-    <header class="container">
+    <header>
+        <img src="assets/images/logo-nav.svg" alt="logo">
         <nav>
-            <div class="nav-upbar">
-                <!--Change size svg-->
-                <img src="assets/images/logo-nav.svg" alt="logo">
-                <span class="nav-desc upbar-item">Строительные работы <br>
-                    Минская область
-                </span>
-                <a class="upbar-item" target="_blank" href="https://www.instagram.com/_stroy_gid_/?igshid=ZDdkNTZiNTM%3D">
-                    <img class="inst-logo" src="assets/images/instagram-mono.svg" alt="instagram">
-                </a>
-                <a class="tel-link" href="tel:+375297040205">
-                    <div class="nav-phone upbar-item">
-                        <span class="nav-phone-number">+375 29 704-02-05</span>
-                        <span class="nav-phone-name">Андрей</span>
-                    </div>
-                </a>
-                <a class="tel-link" href="tel:+375297040205">
-                    <div class="nav-phone upbar-item">
-                        <span class="nav-phone-number">+375 29 704-02-05</span>
-                        <span class="nav-phone-name">Андрей</span>
-                    </div>
-                </a>
-                <button id="callback-modal-mob" class="btn-mob btn-yell">Перезвоните мне</button>
-                <button id="callback-modal" class="btn btn-dark-transp">Перезвоните мне</button>
-            </div>
-            <ul class="nav-downbar">
-                <li>
-                    <a>Типы работ</a>
+            <ul>
+                <li class="nav-phone">
+                    <a href="">
+                        <span class="phone-numper">+375 29 704-02-05</span>
+                        <div class="phone-name">Андрей</div>
+                    </a>
+                </li>
+                <li class="nav-phone">
+                    <a href="">
+                        <span class="phone-numper">+375 29 704-02-05</span>
+                        <div class="phone-name">Андрей</div>
+                    </a>
                 </li>
                 <li>
-                    <a>наши работы</a>
+                    <a href="">
+                        <img src="assets/images/instagram-mono.svg" alt="">
+                    </a>
                 </li>
                 <li>
-                    <a>о нас</a>
+                    <a href="">Услуги</a>
                 </li>
                 <li>
-                    <a>контакты</a>
+                    <a href="">О нас</a>
+                </li>
+                <li>
+                    <a href="">Наши работы</a>
+                </li>
+                <li>
+                    <a class="btn btn-def" href="">Связаться с нами</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero-section">
-            <div class="container">Hero</div>
-        </section>
-        <section>Types</section>
-        <section>
-            <article>
-                <h3>About</h3>
-            </article>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Строим от фундамента до кровли</h1>
+                <p>👷‍♂️Строим от фундамента до кровли
+                    Делаем проекты, смету и договор📋
+                    ✍️Даём гарантию
+                    Нал, кредитные деньги, мат. капитал💵</p>
+                <button class="btn btn-def">Оставть заявку</button>
+            </div>
+            <div class="hero-form">
+                <p>Оставьте свои данные и мы с вам свяжемся</p>
+                <form action="">
+                    <input type="email" name="email">
+                    <input type="text" name="name" id="name">
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    <button class="btn btn-def" type="submit">Отправить</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer></footer>
-    <!--
-    <div class="house-animation">
-        <img class="house-dom" src="assets/images/dom-1.png" alt="dom">
-        <img class="house-roof" src="assets/images/roof-1.png" alt="roof">
-    </div>
-    -->
-    <div id="modal" class="modal">
-        <div class="form-modal">
-            <p>Мы вам обязательно перезвоним</p>
-            <form action="">
-                <div class="form-input">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-input">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-input">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-        </div>
-    </div>
-    <script defer src="script.js"></script>
 </body>
 </html>
