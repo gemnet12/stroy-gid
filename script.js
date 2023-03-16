@@ -9,20 +9,36 @@
 //    }, 1000)
 //}
 
-const modal = document.querySelector('#modal');
-const headModalButton = document.querySelectorAll('#callback-modal,#callback-modal-mob');
-const formModal = document.querySelector('.form-modal');
+//const modal = document.querySelector('#modal');
+//const headModalButton = document.querySelectorAll('#callback-modal,#callback-modal-mob');
+//const formModal = document.querySelector('.form-modal');
+//
+//headModalButton.forEach((btn) => {
+//    btn.addEventListener('click', (e) => {
+//        modal.classList.replace('modal','modal-active');
+//    })
+//})
+//
+//modal.addEventListener('click', (e) => {
+//    modal.classList.replace('modal-active', 'modal');
+//})
+//
+//formModal.addEventListener('click', (e) => {
+//    e.stopPropagation();
+//})
 
-headModalButton.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-        modal.classList.replace('modal','modal-active');
-    })
+const closeSideMenu = document.querySelector('#close-side-menu');
+
+closeSideMenu.addEventListener('click', (e) => {
+    const navBar = document.querySelector('nav');
+    navBar.style.display = 'none';
+    menuExpand.style.display = 'block';
 })
 
-modal.addEventListener('click', (e) => {
-    modal.classList.replace('modal-active', 'modal');
-})
+const menuExpand = document.querySelector('#menu');
 
-formModal.addEventListener('click', (e) => {
-    e.stopPropagation();
+menuExpand.addEventListener('click', (e) => {
+    const navBar = document.querySelector('nav');
+    menuExpand.style.display = 'none';
+    navBar.style.display = 'block';
 })

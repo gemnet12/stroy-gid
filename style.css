@@ -21,8 +21,17 @@ header:hover {
     background: #f4f4f4;
 }
 
+.hero {
+    background-image: url('assets/images/hero-background.jpg');
+    background-size: cover;
+}
+
 a {
     text-decoration: none;
+}
+
+.btn {
+    padding: 1em 2em;
 }
 
 .btn {
@@ -30,13 +39,240 @@ a {
     border: 1px solid var(--def-color);
     border-radius: 10px;
     color: #fff;
+    font-weight: 700;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+    #close-side-menu {
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    #menu {
+        cursor: pointer;
+    }
+
+    header {
+        top: 0;
+        position: absolute;
+    }
+
+    header, section, footer {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        padding-left: 30vw;
+        display: none;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul {
+        height: 100%;
+        width: 70vw;
+        list-style-type: none;
+        background: #444444;
+        color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    nav ul li a{
+        color: #fff;
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-top: 2rem;
+    }
+
+    .li-btn {
+        margin-top: 4rem;
+    }
+
+    .nav-phone {
+        text-align: center;
+    }
+
+    .phone-number {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .phone-name {
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+    }
+
+    .hero-content button {
+        font-size: 24px;
+    }
+
+    .hero-form {
+        display: none;
+    }
+
+    .hero > div {
+        padding-top: 25vh;
+    }
+
+    .hero-content p {
+        margin: 10vh 0;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    #close-side-menu {
+        display: none;
+    }
+
+    .nav-phone {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header, section, footer {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin-left: 2em;
+    }
+
+    nav ul a {
+        font-size: 12px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .phone-number {
+        font-size: 16px;
+    }
+
+    .phone-name {
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .hero {
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hero > div {
+        margin-top: 25vh;
+    }
+
+    .hero-content {
+        max-width: 30vw;
+        min-width: 25vw;
+    }
+
+    .hero-content h1{
+        font-size: 24spx;
+    }
+
+    .hero-content p {
+        margin: 40px 0;
+    }
+
+    .hero-form{
+        background: #444444;
+        padding-top: 3em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 3em;
+        border-radius: 20px;
+        text-align: center;
+        height: 40vh;
+        width: 25vw;
+    }
+
+    .hero-form form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    .hero-form form input,textarea,button {
+        margin-top: 2.5vh;
+        border: none;
+        resize: none;
+    }
+
+    .hero-form form input {
+        border: none;
+        height: 4vh;
+    }
+
+    .hero-form form textarea {
+        border: none;
+        height: 13vh;
+    }
+
+    .hero-form p {
+        color: #fff;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
@@ -44,8 +280,8 @@ a {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1136px) {
 
-    .btn {
-        padding: 1em 2em;
+    #close-side-menu {
+        display: none;
     }
 
     header {
@@ -85,8 +321,12 @@ a {
         color: #000;
     }
 
+    .nav-phone {
+        display: block;
+    }
+
     .phone-number {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .phone-name {
@@ -96,7 +336,6 @@ a {
 
     .hero {
         height: 100vh;
-        background-image: url('assets/images/hero-background.jpg');
         background-size: cover;
         display: flex;
         justify-content: space-around;
@@ -117,7 +356,6 @@ a {
 
     .hero-content p {
         margin: 40px 0;
-
     }
 
     .hero-form{
@@ -127,7 +365,6 @@ a {
         text-align: center;
         height: 40vh;
         width: 25vw;
-
     }
 
     .hero-form form {
@@ -137,7 +374,7 @@ a {
     }
 
     .hero-form form input,textarea,button {
-        margin-top: 2.2vh;
+        margin-top: 2.5vh;
         border: none;
         resize: none;
     }
@@ -145,6 +382,11 @@ a {
     .hero-form form input {
         border: none;
         height: 4vh;
+    }
+
+    .hero-form form textarea {
+        border: none;
+        height: 13vh;
     }
 
     .hero-form p {
@@ -155,7 +397,7 @@ a {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1366px) {
     .phone-number {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .phone-name {
@@ -163,5 +405,9 @@ a {
     }
     nav ul a {
         font-size: 16px;
+    }
+
+    .hero-form{
+        width: 15vw;
     }
 }
